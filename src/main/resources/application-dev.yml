@@ -1,0 +1,14 @@
+# DEV ONLY - never use these values outside a local machine
+securebank:
+  jwt:
+    secret: DdDtEwrR64kWeYuSuSCKxu10niYwKcwMvnpVnHa9Br0chjuMZqcovUs1HQUTR/IS
+  crypto:
+    aes-key: N8ZG1X9U3/lmq/1QO0R3qJY/4TIaKN9KNgm8XGF51uA=
+  otp:
+    log-plaintext: true          # OTP is printed to the console instead of SMS/email
+  bootstrap:
+    admin-email: admin@securebank.local
+    admin-password: Admin@12345!
+logging:
+  level:
+    com.securebank: DEBUG

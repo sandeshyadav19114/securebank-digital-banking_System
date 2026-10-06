@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: securebank-config
+  namespace: securebank
+data:
+  SPRING_PROFILES_ACTIVE: "prod"
+  # AWS RDS MySQL endpoint
+  DB_URL: "jdbc:mysql://securebank.xxxxxxxx.ap-south-1.rds.amazonaws.com:3306/securebank?useSSL=true&serverTimezone=UTC"
+  # AWS ElastiCache (Redis) endpoint
+  REDIS_HOST: "securebank.xxxxxx.0001.aps1.cache.amazonaws.com"
+  # AWS MSK bootstrap brokers
+  KAFKA_BOOTSTRAP_SERVERS: "b-1.securebank.xxxxxx.kafka.ap-south-1.amazonaws.com:9092"
